@@ -18,15 +18,16 @@ export default function Home() {
     <>
       <Nav />
       {/* Hero  */}
-      <div className="flex flex-col text-center items-center  text-secondary md:flex-row-reverse md:justify-between">
+      <div className="flex flex-col text-center items-center  text-secondary md:flex-row-reverse md:justify-between
+        md:max-w-screen-lg md:mx-auto">
         {/* image */}
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 grid">
           <Image
             src={heroImage}
             width={300}
             height={300}
             alt="a landing page design by fitwelldesignmarketing"
-            className="md:relative md:right-[-5rem]"
+            className="md:relative md:justify-self-end"
           />
         </div>
         {/* text */}
@@ -43,7 +44,7 @@ export default function Home() {
       <h1 className="text-secondary text-center text-xl font-semibold mt-10">
         We Provide a One-Stop Solution for All Your Digital Needs.
       </h1>
-      <div className="flex flex-col mt-10 pb-6 px-2 md:flex-row md:items-center gap-5">
+      <div className="flex flex-col mt-10 pb-6 px-2 md:flex-row md:items-center gap-5 md:max-w-screen-lg md:mx-auto">
 
         <div className="md:w-1/2">
           <Image
@@ -54,6 +55,9 @@ export default function Home() {
         </div>
         <div className="text-secondary text-center md:text-left text-lg md:w-1/2 md:text-xl md:text-left
         ">
+          <h1 className="text-secondary text-xl font-semibold">
+          A One-Stop Solution to grow.
+          </h1>
           <p>no more hiring different professionals for different tasks, everything you need to grow your business in one place -
             <i>all your digital needs in one place</i></p>
         </div>
@@ -66,7 +70,7 @@ export default function Home() {
           <p className="text-2xl">Our Services</p>
           <h2 className="text-xl font-semibold">Focus on Your business while we focus on getting you customers</h2>
         </div>
-        <div className="flex flex-col md:flex-row md:items-center gap-5">
+        <div className="flex flex-col md:flex-row md:items-center gap-5 md:max-w-screen-lg mx-auto">
           <Image
             src={social}
             className="w-[40rem] mx-auto md:w-1/2"
@@ -79,11 +83,11 @@ export default function Home() {
         </div>
 
 
-        <div className="flex flex-col md:flex-row-reverse md:items-center">
+        <div className="flex flex-col md:flex-row-reverse md:items-center md:max-w-screen-lg mx-auto">
           <div className="md:w-1/2">
             <Image
               src={writingImg}
-              className="w-[40rem]  md:w-[100%]"
+              className="w-[40rem]  md:w-[100%] mx-auto"
               alt="mockup design "
             />
           </div>
@@ -95,11 +99,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row md:items-center gap-5">
-          <div className="w-[50%] mx-auto">
+        <div className="flex flex-col md:flex-row md:items-center gap-5 md:max-w-screen-lg mx-auto">
+          <div className="w-[50%] mx-auto grid">
             <Image
               src={dollarImg}
-              className="w-[15rem]  md:w-[70%]"
+              className="w-[15rem] mx-auto place-self-center"
               alt="mockup design "
             />
           </div>
@@ -114,7 +118,8 @@ export default function Home() {
 
       </div>
       {/* Call-to-action */}
-      <div className="pt-10 text-center flex flex-col items-center text-secondary px-3 gap-3 md:flex-row-reverse md:items-center gap-5">
+      <div className="pt-10 text-center flex flex-col items-center text-secondary px-3 gap-3 md:flex-row-reverse md:items-center gap-5
+      md:max-w-screen-lg mx-auto">
 
         <div className="md:w-1/2">
           <Image
@@ -141,11 +146,11 @@ export default function Home() {
         <h1 className="text-center text-secondary text-2xl py-10">
           Delivering Results: Unveiling Our Comprehensive Process for Driving Profits with Web Design and Marketing
         </h1>
-        <div className="flex flex-col md:flex-row-reverse md:items-center gap-5">
+        <div className="flex flex-col md:flex-row-reverse md:items-center gap-5 md:max-w-screen-lg mx-auto">
           <Image
             src={goalsImg}
             alt="fitwelld esign marketing understanding your Goals"
-            className="mx-auto md:w-1/2 "
+            className="mx-auto md:w-[30%]"
           />
           {/* Text */}
           <div className="md:w-1/2 flex flex-col">
@@ -156,11 +161,11 @@ export default function Home() {
 
         </div>
 
-        <div className="flex flex-col md:flex-row gap-10 md:items-center">
+        <div className="flex flex-col md:flex-row gap-10 md:items-center md:max-w-screen-lg mx-auto">
           <Image
             src={clearPlan}
             alt="fitwelld esign marketing understanding your Goals"
-            className="mx-auto md:w-1/2"
+            className="mx-auto md:w-[30%]"
           />
           {/* Text */}
           <div className="md:w-1/2 flex flex-col md:text-start">
@@ -172,11 +177,11 @@ export default function Home() {
 
         </div>
 
-        <div className="flex flex-col md:flex-row-reverse gap-10 md:items-center">
+        <div className="flex flex-col md:flex-row-reverse gap-10 md:items-center md:max-w-screen-lg mx-auto">
           <Image
             src={updates}
             alt="fitwelld esign marketing understanding your Goals"
-            className="mx-auto md:w-1/2"
+            className="mx-auto md:w-[30%]"
           />
           {/* Text */}
           <div className="md:w-1/2 flex flex-col md:text-start">

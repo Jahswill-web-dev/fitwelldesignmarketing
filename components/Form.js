@@ -2,7 +2,7 @@ function Form() {
     return (
         <>
             <h1 className="p-10 text-2xl text-secondary text-center">Contact Us</h1>
-            <form className="flex flex-col items-center gap-5">
+            <form className="flex flex-col items-center gap-5 md:max-w-screen-lg mx-auto">
                 <div className="flex flex-col w-[85%] gap-5 md:flex-row md:justify-between">
 
                     <input placeholder="Name" type="text" name="fName"

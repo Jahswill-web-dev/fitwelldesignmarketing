@@ -11,7 +11,7 @@ function Nav() {
     }
 
     return (
-        <nav className="md:flex md:items-center md:justify-between">
+        <nav className="md:flex md:items-center md:justify-between md:max-w-screen-lg md:mt-4 mx-auto">
 
             {/* mobile */}
             <div>
