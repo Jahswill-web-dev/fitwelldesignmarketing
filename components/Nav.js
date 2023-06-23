@@ -32,9 +32,9 @@ function Nav() {
                 <ul className={`flex flex-col items-center gap-4 transition-all ease-in-out ${navHeight} md:h-0 
                  duration-400 delay-150 overflow-hidden text-secondary text-2xl`}
                     style={{ transition: 'height 0.3s' }} >
-                    <Link href="/">Our Services</Link>
-                    <Link href="/">About Us</Link>
-                    <Link href="/">Contact Us</Link>
+                    <Link href="#services">Our Services</Link>
+                    <Link href="#about">About Us</Link>
+                    <Link href="#contact">Contact Us</Link>
                 </ul>
 
             </div>
@@ -42,9 +42,9 @@ function Nav() {
 
             {/* desktop */}
             <ul className="hidden md:flex gap-2 text-secondary pr-4 text-xl">
-                    <Link href="/">Services</Link>
-                    <Link href="/">About</Link>
-                    <Link href="/">Contact </Link>
+                    <Link href="#services">Services</Link>
+                    <Link href="#about">About</Link>
+                    <Link href="#contact">Contact </Link>
                 </ul>
         </nav>
 

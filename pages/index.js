@@ -54,7 +54,7 @@ export default function Home() {
           />
         </div>
         <div className="text-secondary text-center md:text-left text-lg md:w-1/2 md:text-xl md:text-left
-        ">
+        " id="about">
           <h1 className="text-secondary text-xl font-semibold">
           A One-Stop Solution to grow.
           </h1>
@@ -66,7 +66,7 @@ export default function Home() {
       {/* section 3 Usp */}
 
       <div className="text-secondary text-center flex flex-col gap-16 px-2">
-        <div>
+        <div id="services">
           <p className="text-2xl">Our Services</p>
           <h2 className="text-xl font-semibold">Focus on Your business while we focus on getting you customers</h2>
         </div>
@@ -198,7 +198,7 @@ export default function Home() {
 
 
       {/* Conatact Us */}
-      <div>
+      <div id="contact">
         <Form />
       </div>
     </>
