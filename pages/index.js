@@ -1,5 +1,6 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Image from 'next/image';
+import Link from 'next/link';
+import { Inter } from 'next/font/google';
 import Nav from '../components/Nav.js';
 import heroImage from '../public/images/hero-image.png';
 import solution from '../public/images/solution-d.png';
@@ -11,7 +12,7 @@ import goalsImg from '../public/images/goals.png';
 import clearPlan from '../public/images/clear-plan.png';
 import updates from '../public/images/updates.png';
 import Form from '@/components/Form.js';
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -41,7 +42,10 @@ export default function Home() {
         </div>
       </div>
       {/* section 2 */}
-      <h1 className="text-secondary text-center text-xl font-semibold mt-10">
+      <h1 id="about" className="text-secondary text-center text-xl font-semibold mt-10">
+        About Us
+      </h1>
+      <h1 className="text-secondary text-center text-xl font-semibold">
         We Provide a One-Stop Solution for All Your Digital Needs.
       </h1>
       <div className="flex flex-col mt-10 pb-6 px-2 md:flex-row md:items-center gap-5 md:max-w-screen-lg md:mx-auto">
@@ -54,11 +58,11 @@ export default function Home() {
           />
         </div>
         <div className="text-secondary text-center md:text-left text-lg md:w-1/2 md:text-xl md:text-left
-        " id="about">
+        " >
           <h1 className="text-secondary text-xl font-semibold">
-          A One-Stop Solution to grow.
+            A One-Stop Solution to grow.
           </h1>
-          <p>no more hiring different professionals for different tasks, everything you need to grow your business in one place -
+          <p>no more hiring different professionals for different tasks, everything you need to grow your businnes in one place -
             <i>all your digital needs in one place</i></p>
         </div>
       </div>
@@ -68,7 +72,7 @@ export default function Home() {
       <div className="text-secondary text-center flex flex-col gap-16 px-2">
         <div id="services">
           <p className="text-2xl">Our Services</p>
-          <h2 className="text-xl font-semibold">Focus on Your business while we focus on getting you customers</h2>
+          <h2 className="text-xl font-semibold">Focus on your businesss while we focus on getting you customers</h2>
         </div>
         <div className="flex flex-col md:flex-row md:items-center gap-5 md:max-w-screen-lg mx-auto">
           <Image
@@ -131,7 +135,7 @@ export default function Home() {
 
         <div className="md:w-1/2 md:text-left md:items-start">
           <h1 className="text-2xl font-medium md:text-left">Access professional strategies and guidelines to grow your business Now!</h1>
-          <button className="text-primary bg-[#FF7F00] px-8 py-3 text-xl rounded bg-black mt-5">
+          <button className="text-primary  bg-[#FF7F00] px-8 py-3 text-xl rounded mt-5">
             {/* Teal:#008080 */}
             Start a free consultation
           </button>
@@ -201,6 +205,18 @@ export default function Home() {
       <div id="contact">
         <Form />
       </div>
+      {/* footer */}
+      <footer className="pt-20 text-secondary">
+        <div className="text-center flex flex-col gap-3 pb-5 sm:flex-row justify-center">
+          {/* <p>Links</p> */}
+          <Link href="#services">Our Services</Link>
+          <Link href="#about">About Us</Link>
+          <Link href="#contact">Contact Us</Link>
+        </div>
+        <p className="text-center">
+          &copy;2023 fitwelldesignmarketing
+        </p>
+      </footer>
     </>
 
   )
