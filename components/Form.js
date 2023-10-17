@@ -40,7 +40,8 @@ function Form() {
 return (
     <>
         <h1 className="p-10 text-2xl text-secondary text-center">Contact Us</h1>
-        <form className="flex flex-col items-center gap-5 md:max-w-screen-lg mx-auto">
+        <form className="flex flex-col items-center gap-5 md:max-w-screen-lg mx-auto" 
+         onSubmit={handleSubmit}>
             <div className="flex flex-col w-[85%] gap-5 md:flex-row md:justify-between">
 
                 <input placeholder="Full Name" type="text" name="name" value={values.name}
@@ -69,7 +70,7 @@ return (
             >
             </textarea>
             <button type="submit" className="text-primary bg-[#FF7F00] px-8 py-3 text-xl rounded-lg"
-            onClick={handleSubmit}>
+            >
                 Get Free Proposal
             </button>
         </form>

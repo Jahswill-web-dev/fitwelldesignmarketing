@@ -11,7 +11,10 @@ import consultImg from '../public/images/consultation-design.png';
 import goalsImg from '../public/images/goals.png';
 import clearPlan from '../public/images/clear-plan.png';
 import updates from '../public/images/updates.png';
+import avatar from '../public/images/avatar.png';
+import quote from '../public/images/quote-left-solid.png';
 import Form from '@/components/Form.js';
+import Portfolio from '@/components/Portfolio.js';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
@@ -33,11 +36,16 @@ export default function Home() {
         </div>
         {/* text */}
         <div className="flex flex-col gap-2 items-center  md:items-start md:w-1/2 md:pl-4">
-          <h1 className="text-2xl text-center md:text-left">Transform Your Online Success: Experience Results-Driven Web Design and Marketing Excellence</h1>
-          <h2>web design that gets you paying customers</h2>
+          <h1 className="text-2xl font-semibold text-center md:text-left">{"Transform Your Online Success: Experience Results-Driven Web Design and Marketing Excellence"}</h1>
+          <h2 className="text-[1.2rem]  pb-3">web design that gets you paying customers</h2>
+          <Link
+          href="https://calendly.com/fitwelldesignmarketing/20min"
+          target="_blank"
+          >
           <button className="text-primary bg-[#FF7F00] px-8 py-3 text-xl rounded-lg">
             Free consultation
           </button>
+          </Link>
           <p>get ideas to grow your business now!!!</p>
         </div>
       </div>
@@ -59,7 +67,7 @@ export default function Home() {
         </div>
         <div className="text-secondary text-center md:text-left text-lg md:w-1/2 md:text-xl md:text-left
         " >
-          <h1 className="text-secondary text-xl font-semibold">
+          <h1 className="text-secondary text-2xl font-semibold">
             A One-Stop Solution to grow.
           </h1>
           <p>no more hiring different professionals for different tasks, everything you need to grow your businnes in one place -
@@ -72,7 +80,7 @@ export default function Home() {
       <div className="text-secondary text-center flex flex-col gap-16 px-2">
         <div id="services">
           <p className="text-2xl">Our Services</p>
-          <h2 className="text-xl font-semibold">Focus on your businesss while we focus on getting you customers</h2>
+          <h2 className="text-xl font-bold">Focus on your businesss while we focus on getting you customers</h2>
         </div>
         <div className="flex flex-col md:flex-row md:items-center gap-5 md:max-w-screen-lg mx-auto">
           <Image
@@ -119,10 +127,14 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </div> 
+        
+      {/* testimonials */}
+      <Portfolio/>
 
-      </div>
+
       {/* Call-to-action */}
-      <div className="pt-10 text-center flex flex-col items-center text-secondary px-3 gap-3 md:flex-row-reverse md:items-center gap-5
+      <div className="py-20 text-center flex flex-col items-center text-secondary px-4 gap-3 md:flex-row-reverse md:items-center gap-5
       md:max-w-screen-lg mx-auto">
 
         <div className="md:w-1/2">
@@ -134,11 +146,16 @@ export default function Home() {
         </div>
 
         <div className="md:w-1/2 md:text-left md:items-start">
-          <h1 className="text-2xl font-medium md:text-left">Access professional strategies and guidelines to grow your business Now!</h1>
+          <h1 className="text-2xl font-medium md:text-left">Join This happy clients by Booking a free call now!!</h1>
+          <Link
+          href="https://calendly.com/fitwelldesignmarketing/20min"
+          target="_blank"
+          >
           <button className="text-primary  bg-[#FF7F00] px-8 py-3 text-xl rounded mt-5">
             {/* Teal:#008080 */}
             Start a free consultation
           </button>
+          </Link>
         </div>
       </div>
 
@@ -147,7 +164,7 @@ export default function Home() {
 
 
       <div className="flex flex-col gap-10 px-4">
-        <h1 className="text-center text-secondary text-2xl py-10">
+        <h1 className="text-center text-secondary text-2xl py-10 font-semibold md:max-w-[70%] mx-auto">
           Delivering Results: Unveiling Our Comprehensive Process for Driving Profits with Web Design and Marketing
         </h1>
         <div className="flex flex-col md:flex-row-reverse md:items-center gap-5 md:max-w-screen-lg mx-auto">
@@ -193,13 +210,35 @@ export default function Home() {
             <p className="text-center md:text-start text-secondary leading-relaxed text-lg">
               Providing regular weekly updates on current progress is crucial to ensure that we are on track towards achieving the desired goals. and if needed adjustments are made              </p>
           </div>
+        </div>
+      </div>
+      {/* Portfolio */}
+      {/* <Portfolio/> */}
+      {/* Call-to-action */}
+      <div className="pt-10 text-center flex flex-col items-center text-secondary px-3 gap-3 md:flex-row md:items-center gap-5
+      md:max-w-screen-lg mx-auto">
 
+        <div className="md:w-1/2">
+          <Image
+            src={consultImg}
+            className="w-[30rem] mx-auto md:w-[100%]"
+            alt="mockup design"
+          />
         </div>
 
-
-
+        <div className="md:w-1/2 md:text-left md:items-start">
+          <h1 className="text-2xl font-medium md:text-left">Access professional strategies and guidelines to grow your business Now!</h1>
+          <Link
+          href="https://calendly.com/fitwelldesignmarketing/20min"
+          target="_blank"
+          >
+          <button className="text-primary  bg-[#FF7F00] px-8 py-3 text-xl rounded mt-5">
+            {/* Teal:#008080 */}
+            Start a free consultation
+          </button>
+          </Link>
+        </div>
       </div>
-
 
       {/* Conatact Us */}
       <div id="contact">
@@ -221,3 +260,8 @@ export default function Home() {
 
   )
 }
+// integrate nodemailer and
+// add blog section(test it out seprately)
+
+
+
