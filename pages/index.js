@@ -37,7 +37,7 @@ export default function Home() {
         {/* text */}
         <div className="flex flex-col gap-2 items-center  md:items-start md:w-1/2 md:pl-4">
           <h1 className="text-2xl font-semibold text-center md:text-left">{"Transform Your Online Success: Experience Results-Driven Web Design and Marketing Excellence"}</h1>
-          <h2 className="text-[1.2rem] pb-3 text-[#FF7F00]">web design that gets you paying customers</h2>
+          <h2 className="text-[1.2rem] px-3 pb-3 text-[#FF7F00]">web design that gets you paying customers</h2>
           <Link
           href="https://calendly.com/fitwelldesignmarketing/20min"
           target="_blank"
@@ -53,7 +53,7 @@ export default function Home() {
       <h1 id="about" className="text-secondary text-center text-xl font-semibold mt-10">
         About Us
       </h1>
-      <h1 className="text-secondary text-center text-xl font-semibold">
+      <h1 className="text-secondary px-3 text-center text-xl font-semibold">
         We Provide a One-Stop Solution for You to grow Online.
       </h1>
       <div className="flex flex-col mt-10 pb-6 px-2 md:flex-row md:items-center gap-5 md:max-w-screen-lg md:mx-auto">
@@ -146,7 +146,7 @@ export default function Home() {
         </div>
 
         <div className="md:w-1/2 md:text-left md:items-start">
-          <h1 className="text-2xl font-medium md:text-left">Join This happy clients by Booking a free call now!!, kick start your online success</h1>
+          <h1 className="text-2xl font-medium md:text-left">Join This happy clients by Booking a free call now!! kick start your online success</h1>
           <Link
           href="https://calendly.com/fitwelldesignmarketing/20min"
           target="_blank"
