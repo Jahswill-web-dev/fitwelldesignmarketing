@@ -37,7 +37,7 @@ export default function Home() {
         {/* text */}
         <div className="flex flex-col gap-2 items-center  md:items-start md:w-1/2 md:pl-4">
           <h1 className="text-2xl font-semibold text-center md:text-left">{"Transform Your Online Success: Experience Results-Driven Web Design and Marketing Excellence"}</h1>
-          <h2 className="text-[1.2rem]  pb-3">web design that gets you paying customers</h2>
+          <h2 className="text-[1.2rem] pb-3 text-[#FF7F00]">web design that gets you paying customers</h2>
           <Link
           href="https://calendly.com/fitwelldesignmarketing/20min"
           target="_blank"
@@ -54,7 +54,7 @@ export default function Home() {
         About Us
       </h1>
       <h1 className="text-secondary text-center text-xl font-semibold">
-        We Provide a One-Stop Solution for All Your Digital Needs.
+        We Provide a One-Stop Solution for You to grow Online.
       </h1>
       <div className="flex flex-col mt-10 pb-6 px-2 md:flex-row md:items-center gap-5 md:max-w-screen-lg md:mx-auto">
 
@@ -70,8 +70,8 @@ export default function Home() {
           <h1 className="text-secondary text-2xl font-semibold">
             A One-Stop Solution to grow.
           </h1>
-          <p>no more hiring different professionals for different tasks, everything you need to grow your businnes in one place -
-            <i>all your digital needs in one place</i></p>
+          <p className="md:w-[25rem]"> everything you need to grow your business online, all in one place-
+            <i> Complete package to online growth</i></p>
         </div>
       </div>
 
@@ -90,7 +90,7 @@ export default function Home() {
           />
           <div className="md:w-1/2 md:text-left">
             <h1 className="text-2xl">social media marketing and management</h1>
-            <p className="text-lg md:text-left">Our top-notch social media strategy grows your audience and generates results with effective ad campaigns.</p>
+            <p className="text-lg md:text-left md:w-[25rem]">Our top-notch social media strategy grows your audience and generates results with effective ad campaigns.</p>
           </div>
         </div>
 
@@ -106,7 +106,7 @@ export default function Home() {
           <div className="md:w-1/2 md:text-left md:mt-10">
             <h1 className="text-2xl">content writing and copy writing</h1>
             <p className="text-lg md:text-left">
-              We collaborate with you to create authoritative and credible content that builds trust with your audience. copywriting that tells the value of your service or product and gains more sales
+            copywriting tells the value of your service or product and gains more sales, We collaborate with you to create authoritative and credible content that builds trust with your audience.
             </p>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function Home() {
         </div>
 
         <div className="md:w-1/2 md:text-left md:items-start">
-          <h1 className="text-2xl font-medium md:text-left">Join This happy clients by Booking a free call now!!</h1>
+          <h1 className="text-2xl font-medium md:text-left">Join This happy clients by Booking a free call now!!, kick start your online success</h1>
           <Link
           href="https://calendly.com/fitwelldesignmarketing/20min"
           target="_blank"

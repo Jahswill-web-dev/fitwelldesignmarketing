@@ -3,8 +3,8 @@ import golddustai from "@/public/images/golddustai.png";
 import golddustaimobile from "@/public/images/golddustmobile.png";
 import jjwillmin from "@/public/images/jjwillmin.png";
 import jjwillminmobile from "@/public/images/jjwillminmobile.png";
-import mall from "@/public/images/mall.png"
-import mallmobile from "@/public/images/mallmobile.png"
+import mall from "@/public/images/mall.png";
+import mallmobile from "@/public/images/mallmobile.png";
 
 import Link from 'next/link';
 
@@ -39,6 +39,29 @@ function Portfolio() {
                         </Link>
                     </div>
                 </div>
+                 {/* jjwillmin malls */}
+                <div className="p-5 max-w-[95%] mx-auto">
+                    <Link href="https://www.jjwillminmalls.com/">
+                        <div className="flex gap-5 mx-auto">
+                            <Image
+                                src={mall}
+                                alt="JJWILLMIN website"
+                                className="mx-auto w-[45%] h-[45%]"
+                            />
+                            <Image
+                                src={mallmobile}
+                                alt="JJWILLMIN website"
+                                className="mx-auto w-[30%] h-[30%]"
+                            />
+                        </div>
+                    </Link>
+                    <div className="flex justify-center pt-2 text-center text-green-900">
+                        {/* <h3 className="text-primary">Golddust AI</h3> */}
+                        <Link href="https://www.jjwillminmalls.com/">
+                            <button>Live site <i className="fa-solid fa-arrow-right"></i></button>
+                        </Link>
+                    </div>
+                </div>
                {/* jjwillmin */}
                 <div className="p-5 max-w-[95%] mx-auto">
                     <Link href="https://j-jwillmin-website.vercel.app/">
@@ -62,29 +85,7 @@ function Portfolio() {
                         </Link>
                     </div>
                 </div>
-               
-                <div className="p-5 max-w-[95%] mx-auto">
-                    <Link href="https://www.jjwillminmalls.com/">
-                        <div className="flex gap-5 mx-auto">
-                            <Image
-                                src={mall}
-                                alt="JJWILLMIN website"
-                                className="mx-auto w-[45%] h-[45%]"
-                            />
-                            <Image
-                                src={mallmobile}
-                                alt="JJWILLMIN website"
-                                className="mx-auto w-[30%] h-[30%]"
-                            />
-                        </div>
-                    </Link>
-                    <div className="flex justify-center pt-2 text-center text-green-900">
-                        {/* <h3 className="text-primary">Golddust AI</h3> */}
-                        <Link href="https://www.jjwillminmalls.com/">
-                            <button>Live site <i className="fa-solid fa-arrow-right"></i></button>
-                        </Link>
-                    </div>
-                </div>
+              
                
             </div>
         </div>
